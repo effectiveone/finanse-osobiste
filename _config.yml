@@ -1,0 +1,59 @@
+title: "Finanse Osobiste"
+tagline: "Mądre zarządzanie finansami na co dzień"
+description: "Portal o finansach osobistych, budżetowaniu, oszczędzaniu i planowaniu finansowej przyszłości."
+url: "https://effectiveone.github.io"
+baseurl: "/finanse-osobiste"
+lang: pl
+
+remote_theme: cotes2020/jekyll-theme-chirpy@v7.2.4
+
+timezone: Europe/Warsaw
+paginate: 10
+
+# SEO
+author:
+  name: "Redakcja Finanse Osobiste"
+
+# Chirpy theme settings
+theme_mode: # [light | dark]
+avatar: "/assets/img/avatar.png"
+toc: true
+
+# Social
+github:
+  username: effectiveone
+
+# Analytics
+google_analytics: ""
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "Redakcja"
+      toc: true
+      comments: false
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+permalink: /:year/:month/:day/:title/
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - tools
+  - README.md
+  - LICENSE
+  - Gemfile.lock
