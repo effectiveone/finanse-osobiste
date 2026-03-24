@@ -5,33 +5,28 @@ url: "https://effectiveone.github.io"
 baseurl: "/finanse-osobiste"
 lang: pl
 
-remote_theme: cotes2020/jekyll-theme-chirpy@v7.2.4
+theme: jekyll-theme-chirpy
 
 timezone: Europe/Warsaw
 paginate: 10
 
-# SEO
 author:
   name: "Redakcja Finanse Osobiste"
 
-# Chirpy theme settings
-theme_mode: # [light | dark]
-avatar: "/assets/img/avatar.png"
+theme_mode:
+avatar: ""
 toc: true
 
-# Social
 github:
   username: effectiveone
 
-# Analytics
-google_analytics: ""
-
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-include-cache
 
 defaults:
   - scope:
